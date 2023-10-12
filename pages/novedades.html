@@ -15,32 +15,53 @@
 
   <header>
 
-    <div class="logo-menu-header">
-      <a href="../index.html" alt="Inicio" title="Inicio"><img src="../img/logo-clothing-sin-palabras.png"
-          alt="Logo principal del sitio" class="logo-header"></a>
-    </div>
-
-    <div class="menu-desplegable">
-      <img src="../img/menu-desplegable.png" alt="Menu desplegable"> <!--Futuro menu desplegable-->
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../pages/catalogo.html">Catálogo</a></li>
-        <li><a href="../pages/novedades.html" class="focus">Novedades</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-      </ul>
-    </nav>
-
-    <div class="lupa-carrito-header">
-      <div class="header-search-bar"><label for="search-bar"></label>
-        <input type="search" id="search-bar" placeholder="Buscar productos" class="lupa-input-header">
-        <img src="../img/lupa.png" alt="Buscar productos" title="Buscar productos"> <!-- FUTURO ONCLICK BUTTON  -->
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html" alt="Inicio" title="Inicio"><img
+            src="../img/logo-clothing-sin-palabras.png" alt="Logo principal del sitio"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link   active" aria-current="page" href="./novedades.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tu historial de compras</a></li>
+                <li><a class="dropdown-item" href="#">Tu carrito</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Tu perfil</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-      <img src="../img/carrito.png" alt="Carrito" title="Carrito"> <!--FUTURA PAGINA DE CARRITO-->
-    </div>
+    </nav>
 
   </header>
 
