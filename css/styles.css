@@ -26,7 +26,8 @@ a {
 }
 
 .focus {
-  text-decoration: underline;
+  font-weight: 800;
+  /* text-shadow: rgb(163, 164, 182) 2px 1px; */
 }
 
 
@@ -51,31 +52,29 @@ header {
 footer {
 
   background-color: rgba(133, 133, 133, 0.767);
-  justify-content: space-between;
-  padding: 15px;
+  padding: 1rem;
   align-items: center;
 
 }
 
 header nav {
   width: 70%;
-  font-size: 1.85em;
+  font-size: 1.85rem;
   display: flex;
   justify-content: center;
-  /* background-color: aqua; */
 }
 
 header nav ul {
-  padding: 15px;
-  margin: 15px;
+  padding: 0.7rem;
+  margin: 0.5rem;
   display: flex;
-  height: 70px;
+  height: 3rem;
 }
 
 header nav ul li {
   align-self: center;
-  margin: 7px;
-  padding: 15px;
+  gap: 1rem;
+  padding: 0.7rem;
   cursor: pointer;
 
 }
@@ -83,7 +82,7 @@ header nav ul li {
 header nav ul li:hover {
   background: #eee;
   color: black;
-  border-radius: 25px;
+  border-radius: 30%;
 }
 
 header nav ul li a {
@@ -93,31 +92,28 @@ header nav ul li a {
 .logo-menu-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  /* background-color: aquamarine; */
+  padding: 0.65rem;
 }
 
 .lupa-carrito-header {
   display: flex;
-  /* background-color: blueviolet; */
-
 }
 
 .lupa-carrito-header img {
-  margin: 30px;
+  margin: 2rem;
 }
 
 header img {
   display: flex;
   align-self: center;
-  height: 35px;
-  width: 35px;
+  height: 2.2rem;
+  width: 2.2rem;
   cursor: pointer;
 }
 
 .logo-header {
-  height: 75px;
-  width: 75px;
+  height: 5rem;
+  width: 5rem;
 }
 
 .header-search-bar {
@@ -128,8 +124,9 @@ header img {
 .lupa-input-header {
   border: 1px solid #917c7c;
   outline: none;
-  height: 30px;
+  height: 2rem;
   align-self: center;
+  display: none;
 
 }
 
@@ -139,7 +136,7 @@ header img {
 }
 
 .socials-footer a {
-  padding: 15px;
+  padding: 1rem;
 }
 
 .socials-footer a:hover {
