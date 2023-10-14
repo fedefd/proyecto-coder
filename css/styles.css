@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Almaden Sans', 'DotGothic16', 'Arial', sans-serif;
+  font-family: 'Gabarito', sans-serif;
   background: #181f23;
   color: rgb(240, 237, 237);
   scroll-behavior: smooth;
@@ -16,7 +16,8 @@ p {
   padding: 0.3rem;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -47,21 +48,17 @@ img {
 }
 
 .focus {
-  font-weight: 800;
+  font-weight: 900;
   /* text-shadow: rgb(163, 164, 182) 2px 1px; */
 }
+
 
 
 /* Header & footer */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid gray;
-  border-top: 1px solid gray;
+  border-bottom: 1px solid rgb(112, 128, 156);
   background-color: #eaf7ff;
-  position: sticky;
-  top: 0;
 }
 
 header input,
@@ -69,14 +66,33 @@ header form button {
   display: none !important;
 }
 
-header nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+header div {
+  flex-direction: row-reverse;
 }
 
-header nav div a img {
-  height: 3rem;
+.btn-navbar {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30%;
+}
+
+header div a img {
+  height: 55px;
+  width: 55px;
+}
+
+header nav {
+  max-width: 100%;
+}
+
+.items-navbar {
+  color: #0b0f11;
+  margin: 1rem;
+}
+
+.items-navbar:hover {
+  background: #eee;
+  color: black;
+  border-radius: 25px;
 }
 
 footer {
@@ -117,13 +133,34 @@ footer div p {
   filter: invert(100%);
 }
 
-/* grid que contiene el body */
+/* btn searchbar */
 
-/* .body-grid-index {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: minmax(10vh, auto) auto 20vh;
-} */
+.btn-searchbar {
+  background-image: url(../img/lupa.png);
+  background-size: cover;
+  padding: 1.2rem;
+  border: none;
+  margin-left: 0.3rem;
+}
+
+.btn-searchbar:hover {
+  background-color: transparent;
+  opacity: 50%;
+  transform: scale(110%);
+}
+
+.margin-left-searchbar {
+  margin-left: 11rem;
+}
+
+/* container para items en bloque */
+
+.containerb {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* 0 es vertical, automatico en horizontal para que quede en el medio de la pantalla */
+}
+
 
 /* titulo del index.html */
 .titulo-h1 {
@@ -156,4 +193,18 @@ footer div p {
 .imgs-coleccion-2023-index img {
   height: 15rem;
   width: 12rem;
+  border: 1px solid white;
+  border-radius: 5px;
 }
+
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+  header div {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {}
