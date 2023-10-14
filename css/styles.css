@@ -84,27 +84,14 @@ header nav {
   max-width: 100%;
 }
 
-.items-navbar {
-  color: #0b0f11;
-  margin: 1rem;
-}
-
-.items-navbar:hover {
-  background: #eee;
-  color: black;
-  border-radius: 25px;
-}
-
-footer {
+.footer-div {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   grid-auto-flow: dense;
   background-color: rgba(133, 133, 133, 0.767);
   padding: 1rem;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   grid-gap: 2rem;
 }
 
@@ -190,7 +177,7 @@ footer div p {
   text-align: center;
 }
 
-.imgs-coleccion-2023-index img {
+.coleccion-2023-index img {
   height: 15rem;
   width: 12rem;
   border: 1px solid white;
@@ -202,9 +189,102 @@ footer div p {
 
 @media (min-width: 768px) {
 
+  /* header */
+
   header div {
     flex-direction: row;
   }
+
+  .items-navbar {
+    color: #0b0f11;
+    margin: 1rem;
+  }
+
+  .items-navbar:hover {
+    background: #eee;
+    color: black;
+    border-radius: 25px;
+  }
+
+  /* main del index */
+
+  .imagen-section-1 p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* section del iframe en el index*/
+
+  .index-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-section-2 iframe {
+    margin-bottom: 1rem;
+  }
+
+  /* section de la collecion 2023 del index */
+
+  .coleccion-2023-index {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  .h2-col-2023 {
+    grid-column: span 3;
+  }
+
+  .index-col-sombrero {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .index-col-carteras {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .index-col-ropa {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  /* footer */
+
+  .footer-div {
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    overflow: hidden;
+  }
+
+  .logo-footer {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .parrafo-footer {
+    grid-row: 1;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .socials-footer {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .socials-footer svg {
+    width: 24px;
+    height: 24px;
+  }
+
 }
 
 @media (min-width: 1200px) {}
