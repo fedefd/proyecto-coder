@@ -57,6 +57,17 @@ img {
 }
 
 
+.t-align-center {
+  text-align: center;
+}
+
+.cards-span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+
 
 /* Header & footer */
 
@@ -153,9 +164,9 @@ footer div p {
 .containerb {
   max-width: 1200px;
   margin: 0 auto;
-  /* 0 es vertical, automatico en horizontal para que quede en el medio de la pantalla */
 }
 
+/* //////// INDEX.HTML //////// */
 
 /* titulo del index.html */
 .titulo-h1 {
@@ -217,7 +228,7 @@ footer div p {
   /* main del index */
 
   .titulo-h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   h1 {
@@ -234,6 +245,7 @@ footer div p {
     justify-content: center;
     align-items: center;
     line-height: 1.2rem;
+    margin: 1rem;
   }
 
   .imagen-section-1 {
@@ -344,4 +356,31 @@ footer div p {
     font-size: 4rem;
   }
 
+}
+
+/* /////// Catálogo.html //////// */
+
+.catalogo-main img {
+  width: 60%;
+  height: 100%;
+  filter: brightness(90%);
+  border-radius: 10px;
+  padding: 0.2rem;
+  border: 1px solid white;
+}
+
+.catalogo-main img:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.catalogo-main h3 {
+  margin-bottom: 1.1rem;
+}
+
+.catalogo-gyc-vestidos,
+.catalogo-gorros-y-carteras,
+.catalogo-h2,
+.lo-mas-vendido,
+.compra-por-genero {
+  margin-bottom: 3.5rem;
 }
