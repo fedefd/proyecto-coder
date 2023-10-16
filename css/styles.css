@@ -27,7 +27,7 @@ a {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   font-family: 'Courier New', sans-serif;
   font-weight: 900;
   text-align: center;
@@ -37,6 +37,7 @@ h2 {
   text-align: center;
   padding: 0.5rem;
   margin-top: 1rem;
+  font-size: 1.8rem;
 }
 
 iframe {
@@ -182,6 +183,7 @@ footer div p {
   min-height: 18rem;
   padding: 1.7rem;
   background-color: rgba(77, 74, 74, 0.164);
+  margin-bottom: 1.5rem;
 }
 
 /* seccion main del index.html */
@@ -201,6 +203,22 @@ footer div p {
   width: 12rem;
   border: 1px solid white;
   border-radius: 5px;
+}
+
+.coleccion-2023-index p {
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border-top: none;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.coleccion-2023-index p:hover {
+  filter: brightness(150%);
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
 }
 
 
@@ -226,14 +244,6 @@ footer div p {
   }
 
   /* main del index */
-
-  .titulo-h1 {
-    margin-bottom: 1.5rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
 
   .index-section-1 {
     display: flex;
@@ -270,10 +280,6 @@ footer div p {
     background-color: #181f23;
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
-  }
-
-  h2 {
-    font-size: 1.8rem;
   }
 
   .index-section-2 iframe {
@@ -377,6 +383,12 @@ footer div p {
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+}
+
+.catalogo-main span:hover {
+  filter: brightness(150%);
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
 }
 
 .catalogo-main img:hover {
