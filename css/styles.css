@@ -765,7 +765,8 @@ footer div p {
   border-radius: 10px;
   border-top: none;
   padding: 2rem;
-  margin: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
 }
 
 .div-nosotros {
@@ -785,6 +786,10 @@ footer div p {
 }
 
 @media (min-width: 768px) {
+
+  .nosotros-title h2 {
+    margin: 1.5rem auto;
+  }
 
   .ropa-a-mano {
     display: flex;
@@ -841,5 +846,57 @@ footer div p {
 }
 
 @media (min-width: 1200px) {
-  .main-nosotros {}
+
+  .nosotros-title h2 {
+    margin: 2.7rem auto;
+  }
+
+  .div-ropa-a-mano {
+    max-width: 21%;
+  }
+
+  /* iframe de google maps section */
+
+  .como-empezo {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 100%;
+    border: 1px white solid;
+    border-radius: 3px;
+  }
+
+  .como-empezo :nth-child(odd) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .como-empezo :nth-child(1) {
+    align-items: start;
+  }
+
+  /* descubre mas sobre nosotros last section */
+
+  .descubrir-mas {
+    display: flex;
+    flex-direction: column;
+    border: white 1px solid;
+    border-top: none;
+    margin-bottom: 3rem;
+  }
+
+  .nosotros-descubre-mas {
+    display: flex;
+  }
+
+  .nosotros-descubre-mas div {
+    border: none;
+  }
+
+  .descubrir-mas img {
+    border-radius: 10px;
+  }
 }
