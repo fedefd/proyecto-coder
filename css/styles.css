@@ -714,6 +714,7 @@ footer div p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid white;
   }
 
   .encontranos h3 {
@@ -723,11 +724,9 @@ footer div p {
   .seccion-1-contacto,
   .encontranos {
     padding: 1rem;
-    border: 1px solid white;
     width: fit-content;
     border-radius: 10px;
   }
-
 }
 
 /* ////// NOSTROS.HTML ////// */
@@ -892,8 +891,6 @@ footer div p {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: 100%;
-    border: 1px white solid;
-    border-radius: 3px;
   }
 
   .como-empezo :nth-child(odd) {
@@ -907,6 +904,7 @@ footer div p {
 
   .como-empezo :nth-child(1) {
     align-items: start;
+    font-size: 3rem;
   }
 
   /* descubre mas sobre nosotros last section */
