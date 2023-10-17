@@ -521,9 +521,6 @@ footer div p {
   line-height: 0;
 }
 
-.novedades-col-v-2023 span {
-  font-size: 0.9rem;
-}
 
 /* seccion collection 2024 */
 
@@ -583,6 +580,14 @@ footer div p {
   .novedades-col-v-2023 img {
     width: 645px;
     height: 400px;
+  }
+
+  .iframe-span {
+    line-height: 0.4rem;
+  }
+
+  .lo-nuevo span {
+    padding: 0.3rem;
   }
 
 
@@ -692,4 +697,149 @@ footer div p {
     border-radius: 10px;
   }
 
+}
+
+/* ////// NOSTROS.HTML ////// */
+
+.nosotros-title {
+  background-image: url(../img/lugar5.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 31% 50%;
+  text-align: center;
+  width: 100%;
+  padding: 3.5rem 0;
+  font-family: 'Courier New', sans-serif;
+  color: #eee;
+}
+
+/* main de nosotros.html */
+
+.ropa-a-mano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.ropa-a-mano img {
+  max-height: 600px;
+  max-width: 100%;
+  border: #eee 1px solid;
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+
+.main-nosotros h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.main-nosotros h3 {
+  text-align: center;
+}
+
+.main-nosotros span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.nosotros-title,
+.texto-ropa-a-mano,
+.como-empezo,
+.nosotros-descubre-mas,
+.haciendo-la-ropa {
+  margin-bottom: 2.5rem;
+  padding: 0.5rem;
+}
+
+.nosotros-descubre-mas div {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: #eee 1px solid;
+  border-radius: 10px;
+  border-top: none;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.div-nosotros {
+  line-height: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.div-nosotros a strong {
+  display: inline-block;
+  color: rgb(213, 255, 96);
+}
+
+.div-nosotros a strong:hover {
+  filter: brightness(95%);
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+
+  .ropa-a-mano {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    line-height: 1.6rem;
+    margin: 0 auto;
+  }
+
+  .div-ropa-a-mano {
+    max-width: 31%;
+  }
+
+  .div-ropa-a-mano img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .texto-ropa-a-mano p {
+    font-size: 0.9rem;
+  }
+
+  .como-empezo iframe {
+    display: flex;
+    margin: 0.5rem auto;
+  }
+
+  .nosotros-descubre-mas img {
+    max-height: 360px;
+  }
+
+  .nosotros-descubre-mas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .nosotros-descubre-mas :nth-child(3) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nosotros-descubre-mas :nth-child(n) {
+    margin: 0.2rem auto;
+  }
+
+  .haciendo-la-ropa iframe {
+    display: flex;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nosotros {}
 }
