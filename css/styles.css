@@ -553,6 +553,22 @@ footer div p {
   margin-bottom: 1rem;
 }
 
+.subscribite-btn {
+  display: inline-block;
+  border: 1px white solid;
+  border-radius: 3px;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+
+.subscribite-btn:hover {
+  filter: brightness(200%);
+  transform: scale(103%);
+  border-radius: 5px;
+}
+
+
 /* media queries de novedades.html */
 
 @media (min-width: 768px) {
@@ -573,11 +589,12 @@ footer div p {
     width: fit-content;
     padding: 1rem;
     border: #eee solid 1px;
-    justify-content: center;
-    text-align: center;
+    text-align: start;
     margin: 2rem auto;
     border-radius: 10px;
   }
+
+
 
 }
 
