@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   background: #181f23;
   color: rgb(240, 237, 237);
   scroll-behavior: smooth;
@@ -28,7 +28,7 @@ a {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", sans-serif;
   font-weight: 900;
   text-align: center;
 }
@@ -57,7 +57,6 @@ img {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-
 .t-align-center {
   text-align: center;
 }
@@ -68,9 +67,10 @@ img {
   margin-bottom: 1.2rem;
 }
 
-
-
-/* Header & footer */
+.containerb {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 header {
   border-bottom: 1px solid rgb(112, 128, 156);
@@ -100,6 +100,21 @@ header nav {
   max-width: 100%;
 }
 
+@media (min-width: 768px) {
+  /* header */
+  header div {
+    flex-direction: row;
+  }
+  .items-navbar {
+    color: #0b0f11;
+    margin: 1rem;
+  }
+  .items-navbar:hover {
+    background: #eee;
+    color: black;
+    border-radius: 25px;
+  }
+}
 .footer-div {
   display: grid;
   grid-template-columns: auto;
@@ -140,36 +155,33 @@ footer div p {
   filter: invert(100%);
 }
 
-/* btn searchbar */
-
-.btn-searchbar {
-  background-image: url(../img/lupa.png);
-  background-size: cover;
-  padding: 1.2rem;
-  border: none;
-  margin-left: 0.3rem;
+@media (min-width: 768px) {
+  .footer-div {
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    overflow: hidden;
+  }
+  .logo-footer {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .parrafo-footer {
+    grid-row: 1;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  .socials-footer {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .socials-footer svg {
+    width: 24px;
+    height: 24px;
+  }
 }
-
-.btn-searchbar:hover {
-  background-color: transparent;
-  opacity: 50%;
-  transform: scale(110%);
-}
-
-.margin-left-searchbar {
-  margin-left: 11rem;
-}
-
-/* container para items en bloque */
-
-.containerb {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* //////// INDEX.HTML //////// */
-
-/* titulo del index.html */
 .titulo-h1 {
   background-image: url(../img/womantitle2.jpg);
   background-repeat: no-repeat;
@@ -185,8 +197,6 @@ footer div p {
   background-color: rgba(77, 74, 74, 0.164);
   margin-bottom: 1.5rem;
 }
-
-/* seccion main del index.html */
 
 .index-section-2 {
   background-color: #0f0f0f;
@@ -221,34 +231,10 @@ footer div p {
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
 }
 
-
-/* media queries */
-
 @media (min-width: 768px) {
-
-  /* header */
-
-  header div {
-    flex-direction: row;
-  }
-
-  .items-navbar {
-    color: #0b0f11;
-    margin: 1rem;
-  }
-
-  .items-navbar:hover {
-    background: #eee;
-    color: black;
-    border-radius: 25px;
-  }
-
-  /* main del index */
-
   .index-section-1 {
     display: flex;
   }
-
   .div-index-section-1 {
     display: flex;
     flex-direction: column;
@@ -257,22 +243,16 @@ footer div p {
     line-height: 1.2rem;
     margin: 1rem;
   }
-
   .imagen-section-1 {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     justify-content: center;
   }
-
   .imagen-section-1 p {
     text-align: center;
     font-size: 1.1rem;
   }
-
-
-  /* section del iframe en el index*/
-
   .index-section-2 {
     display: flex;
     flex-direction: column;
@@ -281,91 +261,42 @@ footer div p {
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
   }
-
   .index-section-2 iframe {
     margin-bottom: 1rem;
   }
-
-  /* section de la collecion 2023 del index */
-
   .coleccion-2023-index {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
   }
-
   .h2-col-2023 {
     grid-column: span 3;
   }
-
   .index-col-sombrero {
     grid-column: 1;
     grid-row: 2;
   }
-
   .index-col-carteras {
     grid-column: 2;
     grid-row: 2;
   }
-
   .index-col-ropa {
     grid-column: 3;
     grid-row: 2;
   }
-
   .coleccion-2023-index div p:hover {
     filter: brightness(150%);
   }
-
-  /* footer */
-
-  .footer-div {
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    overflow: hidden;
-  }
-
-  .logo-footer {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: center;
-  }
-
-  .parrafo-footer {
-    grid-row: 1;
-    font-size: 0.75rem;
-    margin-bottom: 0;
-  }
-
-  .socials-footer {
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  .socials-footer svg {
-    width: 24px;
-    height: 24px;
-  }
-
 }
-
 @media (min-width: 1200px) {
-
   .titulo-h1 {
     background-position: top;
   }
-
   h1 {
     font-size: 4rem;
   }
-
 }
-
-/* /////// Catálogo.html //////// */
-
 .catalogo-main img {
   max-width: 60%;
   max-height: 600px;
@@ -413,68 +344,49 @@ footer div p {
   border-bottom: 1px white solid;
 }
 
-/* media queries del catalogo.html */
-
 @media (min-width: 768px) {
-
-
   .lo-mas-vendido div,
   .compra-por-genero div {
     display: flex;
     justify-content: space-evenly;
   }
-
   .catalogo-gorros-y-carteras,
   .catalogo-vestidos {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-
   .catalogo-main img {
     min-height: 350px;
     max-width: 200px;
     margin-left: 1rem;
     margin-bottom: 0;
   }
-
   .div-gorros-y-carteras {
     display: flex;
     margin-bottom: 2rem;
     justify-content: space-evenly;
   }
-
-
-
 }
-
 @media (min-width: 1200px) {
-
   .lo-mas-vendido div {
     justify-content: space-around;
   }
-
   .lo-mas-vendido img {
     margin: 0;
   }
-
   .catalogo-gyc-vestidos {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .catalogo-gorros-y-carteras,
   .catalogo-vestidos {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-
 }
-
-/* /////// NOVEDADES.HTML /////// */
-
 .main-novedades {
   text-align: center;
 }
@@ -492,7 +404,7 @@ footer div p {
 
 .main-novedades h3 {
   font-weight: 600;
-  text-shadow: 1px 1px #eeeeee79;
+  text-shadow: 1px 1px rgba(238, 238, 238, 0.4745098039);
 }
 
 .novedades1 {
@@ -506,7 +418,7 @@ footer div p {
   width: 100%;
   height: 100%;
   padding: 5rem 0;
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", sans-serif;
 }
 
 .novedades1-h2 {
@@ -521,8 +433,6 @@ footer div p {
   line-height: 0;
 }
 
-/* seccion collection 2023 */
-
 .lo-nuevo {
   padding: 1rem;
 }
@@ -534,15 +444,11 @@ footer div p {
   padding: 0.2rem;
 }
 
-/* seccion collection 2024 */
-
 .lo-nuevo span {
   display: flex;
   flex-direction: column;
   font-size: 0.85rem;
 }
-
-/* seccion formulario */
 
 .ultimas-novedades {
   text-align: start;
@@ -568,11 +474,7 @@ footer div p {
   border-radius: 5px;
 }
 
-
-/* media queries de novedades.html */
-
 @media (min-width: 768px) {
-
   .lo-nuevo {
     padding: 1rem;
     max-width: 768px;
@@ -581,7 +483,6 @@ footer div p {
     justify-content: center;
     margin: 0 auto;
   }
-
   .ultimas-novedades {
     display: flex;
     flex-direction: column;
@@ -593,13 +494,8 @@ footer div p {
     margin: 2rem auto;
     border-radius: 10px;
   }
-
-
-
 }
-
 @media (min-width: 1200px) {
-
   .lo-nuevo {
     display: flex;
     flex-direction: row;
@@ -607,25 +503,17 @@ footer div p {
     justify-content: space-between;
     max-width: 1200px;
   }
-
   .novedades-col-v-2023 img {
     width: 645px;
     height: 400px;
   }
-
   .iframe-span {
     line-height: 0.4rem;
   }
-
   .lo-nuevo span {
     padding: 0.3rem;
   }
-
-
 }
-
-/* ///// CONTACTO.HTML ///// */
-
 .contacto-title {
   background-image: url(../img/lugar2.jpg);
   width: 100%;
@@ -635,7 +523,7 @@ footer div p {
   text-align: center;
   width: 100%;
   padding: 25px;
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", sans-serif;
   color: #eee;
 }
 
@@ -644,8 +532,6 @@ footer div p {
   font-weight: bold;
   padding: 2rem 0;
 }
-
-/* main de contacto.html */
 
 .socials-contacto ul li a:hover {
   filter: brightness(200%);
@@ -690,37 +576,29 @@ footer div p {
 }
 
 @media (min-width: 768px) {
-
   .encontranos iframe {
     display: flex;
     margin: 0 auto;
   }
-
 }
-
 @media (min-width: 1200px) {
-
   .socials-contacto,
   .formulario-contacto,
   .comunicate-cn {
     border: none;
   }
-
   .main-contacto h3 {
     text-align: start;
   }
-
   .seccion-1-contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid white;
   }
-
   .encontranos h3 {
     text-align: center;
   }
-
   .seccion-1-contacto,
   .encontranos {
     padding: 1rem;
@@ -728,9 +606,6 @@ footer div p {
     border-radius: 10px;
   }
 }
-
-/* ////// NOSTROS.HTML ////// */
-
 .nosotros-title {
   background-image: url(../img/lugar5.jpg);
   width: 100%;
@@ -741,11 +616,9 @@ footer div p {
   text-align: center;
   width: 100%;
   padding: 3.5rem 0;
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", sans-serif;
   color: #eee;
 }
-
-/* main de nosotros.html */
 
 .ropa-a-mano {
   display: flex;
@@ -816,11 +689,9 @@ footer div p {
 }
 
 @media (min-width: 768px) {
-
   .nosotros-title h2 {
     margin: 1.5rem auto;
   }
-
   .ropa-a-mano {
     display: flex;
     flex-direction: row;
@@ -829,64 +700,49 @@ footer div p {
     line-height: 1.6rem;
     margin: 0 auto;
   }
-
   .div-ropa-a-mano {
     max-width: 31%;
   }
-
   .div-ropa-a-mano img {
     max-width: 100%;
     max-height: 100%;
   }
-
   .texto-ropa-a-mano p {
     font-size: 0.9rem;
   }
-
   .como-empezo iframe {
     display: flex;
     margin: 0.5rem auto;
   }
-
   .nosotros-descubre-mas img {
     max-height: 360px;
   }
-
   .nosotros-descubre-mas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
-
   .nosotros-descubre-mas :nth-child(3) {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
   }
-
   .nosotros-descubre-mas :nth-child(n) {
     margin: 0.2rem auto;
   }
-
   .haciendo-la-ropa iframe {
     display: flex;
     margin: 1rem auto;
   }
 }
-
 @media (min-width: 1200px) {
-
   .nosotros-title h2 {
     margin: 2.7rem auto;
   }
-
   .div-ropa-a-mano {
     max-width: 21%;
   }
-
-  /* iframe de google maps section */
-
   .como-empezo {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -894,23 +750,18 @@ footer div p {
     margin: 6rem auto;
     background-color: #1c2227;
   }
-
   .como-empezo :nth-child(odd) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: start;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .como-empezo :nth-child(1) {
     align-items: start;
     font-size: 3rem;
   }
-
-  /* descubre mas sobre nosotros last section */
-
   .descubrir-mas {
     display: flex;
     flex-direction: column;
@@ -918,16 +769,15 @@ footer div p {
     border-top: none;
     margin-bottom: 3rem;
   }
-
   .nosotros-descubre-mas {
     display: flex;
   }
-
   .nosotros-descubre-mas div {
     border: none;
   }
-
   .descubrir-mas img {
     border-radius: 10px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

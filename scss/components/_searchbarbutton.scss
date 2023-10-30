@@ -1,0 +1,17 @@
+.btn-searchbar {
+  background-image: url(../img/lupa.png);
+  background-size: cover;
+  padding: 1.2rem;
+  border: none;
+  margin-left: 0.3rem;
+}
+
+.btn-searchbar:hover {
+  background-color: transparent;
+  opacity: 50%;
+  transform: scale(110%);
+}
+
+.margin-left-searchbar {
+  margin-left: 11rem;
+}

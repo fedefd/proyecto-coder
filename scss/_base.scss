@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gabarito', sans-serif;
+  background: #181f23;
+  color: rgb(240, 237, 237);
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 237, 237);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Courier New', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.focus {
+  font-weight: 900;
+  /* text-shadow: rgb(163, 164, 182) 2px 1px; */
+}
+
+.cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+
+.t-align-center {
+  text-align: center;
+}
+
+.cards-span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.containerb {
+  max-width: 1200px;
+  margin: 0 auto;
+}
