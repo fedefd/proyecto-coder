@@ -1,3 +1,10 @@
+$main-color-text: rgb(240, 237, 237);
+$main-bg-color: #181f23;
+$ff-gabarito: 'Gabarito', sans-serif;
+$ff-couriernew: "Courier New", sans-serif;
+$cards-boxshadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+$main-text-boxshadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+
 * {
   padding: 0;
   margin: 0;
@@ -5,9 +12,9 @@
 }
 
 body {
-  font-family: 'Gabarito', sans-serif;
-  background: #181f23;
-  color: rgb(240, 237, 237);
+  font-family: $ff-gabarito;
+  background: $main-bg-color;
+  color: $main-color-text;
   scroll-behavior: smooth;
 }
 
@@ -23,12 +30,12 @@ ol {
 
 a {
   text-decoration: none;
-  color: rgb(240, 237, 237);
+  color: $main-color-text;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Courier New', sans-serif;
+  font-family: $ff-couriernew;
   font-weight: 900;
   text-align: center;
 }
@@ -54,7 +61,7 @@ img {
 }
 
 .cards:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: $cards-boxshadow;
 }
 
 

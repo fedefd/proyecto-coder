@@ -20,11 +20,11 @@
 .catalogo-main span:hover {
   filter: brightness(150%);
   transform: scale(1.1);
-  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: $main-text-boxshadow;
 }
 
 .catalogo-main img:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-shadow: $cards-boxshadow;
 }
 
 .catalogo-main h3 {
