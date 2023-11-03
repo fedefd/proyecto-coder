@@ -1,9 +1,11 @@
 $main-color-text: rgb(240, 237, 237);
 $main-bg-color: #181f23;
+$second-bg-color: #252d33;
 $ff-gabarito: 'Gabarito', sans-serif;
 $ff-couriernew: "Courier New", sans-serif;
 $cards-boxshadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 $main-text-boxshadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+$second-shadow: 0 2px 2px 0 rgba(3, 3, 3, 0.377);
 
 * {
   padding: 0;
@@ -60,6 +62,18 @@ img {
   /* text-shadow: rgb(163, 164, 182) 2px 1px; */
 }
 
+.main-shadow {
+  box-shadow: $main-text-boxshadow;
+}
+
+.second-shadow {
+  box-shadow: $second-shadow;
+}
+
+.second-bg-color {
+  background-color: $second-bg-color;
+}
+
 .cards:hover {
   box-shadow: $cards-boxshadow;
 }
@@ -78,4 +92,18 @@ img {
 .containerb {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@mixin mq-md {
+  @media (min-width: 768px) {
+
+    @content;
+  }
+}
+
+@mixin mq-xl {
+  @media (min-width: 1200px) {
+
+    @content;
+  }
 }

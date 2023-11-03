@@ -1,45 +1,39 @@
 header {
   border-bottom: 1px solid rgb(112, 128, 156);
   background-color: #eaf7ff;
-}
 
-header input,
-header form button {
-  display: none !important;
-}
-
-header div {
-  flex-direction: row-reverse;
-}
-
-.btn-navbar {
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 30%;
-}
-
-header div a img {
-  height: 55px;
-  width: 55px;
-}
-
-header nav {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-
-  header div {
-    flex-direction: row;
+  & nav {
+    max-width: 100%;
   }
 
-  .items-navbar {
-    color: #0b0f11;
-    margin: 1rem;
+  & div {
+    flex-direction: row-reverse;
+
+    & a img {
+      height: 55px;
+      width: 55px;
+    }
   }
 
-  .items-navbar:hover {
-    background: #eee;
-    color: black;
-    border-radius: 25px;
+  & .btn-navbar {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30%;
+  }
+
+  @include mq-md {
+    div {
+      flex-direction: row;
+    }
+
+    .items-navbar {
+      color: #0b0f11;
+      margin: 1rem;
+
+      &:hover {
+        background: #eee;
+        color: black;
+        border-radius: 25px;
+      }
+    }
   }
 }

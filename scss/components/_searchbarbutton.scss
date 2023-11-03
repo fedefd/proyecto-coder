@@ -4,12 +4,12 @@
   padding: 1.2rem;
   border: none;
   margin-left: 0.3rem;
-}
 
-.btn-searchbar:hover {
-  background-color: transparent;
-  opacity: 50%;
-  transform: scale(110%);
+  &:hover {
+    background-color: transparent;
+    opacity: 50%;
+    transform: scale(110%);
+  }
 }
 
 .margin-left-searchbar {

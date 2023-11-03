@@ -57,7 +57,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   border: #eee 1px solid;
-  border-radius: 10px;
+  border-radius: 1rem;
   border-top: none;
   padding: 2rem;
   margin: 2rem auto;
@@ -156,7 +156,7 @@
     grid-template-columns: 65% 35%;
     grid-template-rows: 100%;
     margin: 6rem auto;
-    background-color: #1c2227;
+    background-color: $second-bg-color;
   }
 
   .como-empezo :nth-child(odd) {
