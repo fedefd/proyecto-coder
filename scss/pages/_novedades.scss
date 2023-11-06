@@ -55,16 +55,14 @@
   }
 
   & span {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     font-size: 0.85rem;
   }
 
   @include mq-md {
     padding: 1rem;
     max-width: 768px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     justify-content: center;
     margin: 0 auto;
   }
@@ -117,8 +115,7 @@
   }
 
   @include mq-md {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     align-items: center;
     width: fit-content;
     padding: 1rem;

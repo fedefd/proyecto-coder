@@ -29,8 +29,7 @@
     display: flex;
 
     &-div {
-      display: flex;
-      flex-direction: column;
+      @include flex-column();
       justify-content: center;
       align-items: center;
       line-height: 1.2rem;
@@ -38,8 +37,7 @@
     }
 
     &-img {
-      display: flex;
-      flex-direction: column;
+      @include flex-column();
       padding: 1rem;
       justify-content: center;
 
@@ -57,8 +55,7 @@
   border-bottom: 3px solid rgb(255, 255, 255);
 
   @include mq-md {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     align-items: center;
     background-color: $main-bg-color;
     border-top: 1px solid rgb(255, 255, 255);

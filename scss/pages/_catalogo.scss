@@ -1,4 +1,4 @@
-.catalogo-main {
+.catalogo {
 
   & img {
     max-width: 60%;
@@ -42,28 +42,26 @@
     margin-bottom: 1.1rem;
   }
 
+  &-productos,
+  &-gorros-y-carteras,
+  &-h2,
+  &-lo-mas-vendido,
+  & .compra-por-genero {
+    margin-bottom: 3.5rem;
+    padding: .4rem;
+  }
 
-}
-
-.catalogo-gyc-vestidos,
-.catalogo-gorros-y-carteras,
-.catalogo-h2,
-.lo-mas-vendido,
-.compra-por-genero {
-  margin-bottom: 3.5rem;
-  padding: .4rem;
-}
-
-.lo-mas-vendido,
-.catalogo-gorros-y-carteras,
-.catalogo-gyc-vestidos {
-  border-bottom: 1px white solid;
+  &-lo-mas-vendido,
+  &-gorros-y-carteras,
+  &-productos {
+    border-bottom: 1px white solid;
+  }
 }
 
 @media (min-width: 768px) {
 
 
-  .lo-mas-vendido div,
+  .catalogo-lo-mas-vendido div,
   .compra-por-genero div {
     display: flex;
     justify-content: space-evenly;
@@ -71,42 +69,38 @@
 
   .catalogo-gorros-y-carteras,
   .catalogo-vestidos {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     justify-content: space-evenly;
   }
 
-  .div-gorros-y-carteras {
+  .catalogo-gorros-y-carteras-div {
     display: flex;
     margin-bottom: 2rem;
     justify-content: space-evenly;
   }
-
-
-
 }
 
 @media (min-width: 1200px) {
 
-  .lo-mas-vendido div {
-    justify-content: space-around;
+  .catalogo-lo-mas-vendido {
+    & div {
+      justify-content: space-around;
+    }
+
+    & img {
+      margin: 0;
+    }
   }
 
-  .lo-mas-vendido img {
-    margin: 0;
-  }
-
-  .catalogo-gyc-vestidos {
-    display: flex;
-    flex-direction: column;
+  .catalogo-productos {
+    @include flex-column();
     align-items: center;
-  }
 
-  .catalogo-gorros-y-carteras,
-  .catalogo-vestidos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    & .catalogo-gorros-y-carteras,
+    .catalogo-vestidos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
-
 }

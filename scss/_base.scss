@@ -59,7 +59,6 @@ img {
 
 .focus {
   font-weight: 900;
-  /* text-shadow: rgb(163, 164, 182) 2px 1px; */
 }
 
 .main-shadow {
@@ -92,6 +91,11 @@ img {
 .containerb {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin mq-md {
