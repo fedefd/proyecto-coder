@@ -65,14 +65,17 @@ img {
   background-color: #252d33;
 }
 
-.cards:hover {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-}
-
 .t-align-center {
   text-align: center;
 }
 
+.cards {
+  transition: transform 0.3s ease-in-out;
+}
+.cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  transform: scale(1.01);
+}
 .cards-span {
   display: flex;
   flex-direction: column;
@@ -340,6 +343,7 @@ header .btn-navbar {
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+  transition: all 0.2s ease-out;
 }
 .catalogo span:hover {
   filter: brightness(150%);

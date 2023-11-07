@@ -74,25 +74,36 @@ img {
   background-color: $second-bg-color;
 }
 
-.cards:hover {
-  box-shadow: $cards-boxshadow;
-}
 
 
 .t-align-center {
   text-align: center;
 }
 
-.cards-span {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.2rem;
+
+.cards {
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: $cards-boxshadow;
+    transform: scale(1.01);
+  }
+
+  &-span {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+
 }
+
 
 .containerb {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 @mixin header-img($flex-direction: row) {
   background-repeat: no-repeat;

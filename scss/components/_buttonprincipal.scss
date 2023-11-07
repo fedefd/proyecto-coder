@@ -1,0 +1,17 @@
+@mixin button-de-compra() {
+
+  border: 1px rgba(255, 255, 255, 0.452) solid;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border-top: none;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    filter: brightness(150%);
+    transform: scale(1.1);
+    box-shadow: $main-text-boxshadow;
+  }
+}
