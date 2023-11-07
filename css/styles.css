@@ -283,6 +283,7 @@ header .btn-navbar {
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 1rem;
+  transition: all 0.2s ease-out;
 }
 .index-col p:hover {
   filter: brightness(150%);
