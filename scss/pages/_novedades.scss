@@ -20,16 +20,9 @@
 
 .novedades1 {
   background-image: url(../img/womanhorizontal.jpg);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   background-position: 70% 50%;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding: 5rem 0;
   font-family: $ff-couriernew;
+  @include header-img($flex-direction: column);
 
   &-h2 {
     font-weight: 900;

@@ -11,16 +11,10 @@
 
   & .nosotros-title {
     background-image: url(../img/lugar5.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     background-position: 31% 50%;
-    text-align: center;
-    width: 100%;
-    padding: 3.5rem 0;
     font-family: $ff-couriernew;
     color: #eee;
+    @include header-img();
 
     & h2 {
       font-size: 3.5rem;

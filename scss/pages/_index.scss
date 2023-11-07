@@ -1,21 +1,12 @@
 .titulo-h1 {
   background-image: url(../img/womantitle2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 18rem;
-  padding: 1.7rem;
-  background-color: rgba(77, 74, 74, 0.164);
   margin-bottom: 1.5rem;
+  @include header-img();
 
   @include mq-xl {
 
-    background-position: top;
+    background-position: 20% 20%;
 
     & h1 {
       font-size: 3.6rem;
