@@ -9,7 +9,6 @@ body {
   background: #181f23;
   color: rgb(240, 237, 237);
   scroll-behavior: smooth;
-  font-display: swap;
 }
 
 p {
@@ -274,6 +273,7 @@ header .btn-navbar {
   width: 12rem;
   border: 1px solid white;
   border-radius: 5px;
+  padding: 0.5rem;
 }
 .index-col p {
   border: 1px rgba(255, 255, 255, 0.452) solid;
@@ -322,7 +322,7 @@ header .btn-navbar {
   max-height: 600px;
   filter: brightness(90%);
   border-radius: 10px;
-  padding: 0.2rem;
+  padding: 0.3rem;
   border: 1px solid white;
 }
 .catalogo img:hover {
@@ -474,9 +474,6 @@ header .btn-navbar {
     gap: 5rem;
     justify-content: space-between;
     max-width: 1200px;
-  }
-  .lo-nuevo span {
-    padding: 0.3rem;
   }
   .lo-nuevo .iframe-span {
     line-height: 0.4rem;
@@ -761,10 +758,20 @@ header .btn-navbar {
     margin: 0.2rem auto;
   }
 }
+.descubrir-mas-haciendo-la-ropa {
+  background-color: #252d33;
+  padding: 0.5rem;
+}
 @media (min-width: 768px) {
   .descubrir-mas-haciendo-la-ropa iframe {
     display: flex;
     margin: 1rem auto;
+  }
+}
+@media (min-width: 1200px) {
+  .descubrir-mas-haciendo-la-ropa {
+    width: 90%;
+    border-radius: 0.5rem;
   }
 }
 @media (min-width: 1200px) {

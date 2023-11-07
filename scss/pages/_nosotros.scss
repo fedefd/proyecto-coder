@@ -164,12 +164,20 @@
 
   &-haciendo-la-ropa {
 
+    background-color: $second-bg-color;
+    padding: .5rem;
+
     @include mq-md {
 
       & iframe {
         display: flex;
         margin: 1rem auto;
       }
+    }
+
+    @include mq-xl {
+      width: 90%;
+      border-radius: .5rem;
     }
   }
 
