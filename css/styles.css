@@ -46,6 +46,7 @@ iframe {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .focus {
@@ -130,7 +131,7 @@ header .btn-navbar {
   grid-gap: 2rem;
 }
 .footer-div img {
-  height: 55px;
+  height: 65px;
   width: auto;
 }
 .footer-div-parrafo {
@@ -167,7 +168,7 @@ header .btn-navbar {
   }
   .footer-div-parrafo {
     grid-row: 1;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin-bottom: 0;
   }
   .footer-div-socials {
@@ -175,8 +176,8 @@ header .btn-navbar {
     grid-row: 1;
   }
   .footer-div-socials svg {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
 }
 

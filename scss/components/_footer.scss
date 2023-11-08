@@ -9,7 +9,7 @@
   grid-gap: 2rem;
 
   & img {
-    height: 55px;
+    height: 65px;
     width: auto;
   }
 
@@ -52,7 +52,7 @@
 
     &-parrafo {
       grid-row: 1;
-      font-size: 0.75rem;
+      font-size: 0.90rem;
       margin-bottom: 0;
     }
 
@@ -61,8 +61,8 @@
       grid-row: 1;
 
       & svg {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
       }
     }
   }
