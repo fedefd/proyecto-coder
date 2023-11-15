@@ -66,13 +66,14 @@
         background-color: #faf9f9;
         outline: none;
         border: none;
-        box-shadow: 0 0px 8px 1px rgba(68, 68, 68, 0.356);
+        box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.356);
       }
     }
   }
 
   &-socials ul li a:hover {
-    filter: brightness(200%);
+    filter: brightness(180%);
+    color: rgba(255, 255, 255, 0.88)
   }
 
   &-seccion-1 {
@@ -87,6 +88,11 @@
     background-color: $second-bg-color;
     border-radius: 1rem;
     box-shadow: 0 0px 8px 1px rgba(255, 255, 255, 0.527);
+
+    & a,
+    svg {
+      margin-bottom: .7rem;
+    }
   }
 
   @include mq-xl {

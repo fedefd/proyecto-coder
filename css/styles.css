@@ -620,10 +620,11 @@ header .btn-navbar {
   background-color: #faf9f9;
   outline: none;
   border: none;
-  box-shadow: 0 0px 8px 1px rgba(68, 68, 68, 0.356);
+  box-shadow: 0 0 8px 1px rgba(68, 68, 68, 0.356);
 }
 .contacto-socials ul li a:hover {
-  filter: brightness(200%);
+  filter: brightness(180%);
+  color: rgba(255, 255, 255, 0.88);
 }
 .contacto-seccion-1, .contacto-socials {
   max-width: 700px;
@@ -636,6 +637,10 @@ header .btn-navbar {
   background-color: #252d33;
   border-radius: 1rem;
   box-shadow: 0 0px 8px 1px rgba(255, 255, 255, 0.527);
+}
+.contacto-socials a,
+.contacto-socials svg {
+  margin-bottom: 0.7rem;
 }
 @media (min-width: 1200px) {
   .contacto-socials, .contacto-textform, .contacto-comunicate {
