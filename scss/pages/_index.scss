@@ -4,6 +4,13 @@
   margin-bottom: 1.5rem;
   @include header-img();
 
+  & h1 {
+    font-size: 2.5rem;
+    font-family: $ff-couriernew;
+    font-weight: 900;
+    text-align: center;
+  }
+
   @include mq-xl {
 
     background-position: 20% 20%;

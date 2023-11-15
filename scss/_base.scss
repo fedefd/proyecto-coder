@@ -35,14 +35,18 @@ a {
   color: $main-color-text;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-family: $ff-couriernew;
-  font-weight: 900;
-  text-align: center;
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
-h2 {
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.h1-subpages {
   text-align: center;
   padding: 0.5rem;
   margin-top: 1rem;
@@ -83,7 +87,7 @@ img {
 
 .cards {
 
-  transition: transform 0.3s ease-in-out;
+  transition: transform .1s ease-in-out;
 
   &:hover {
     box-shadow: $cards-boxshadow;
