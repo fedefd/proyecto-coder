@@ -1,4 +1,4 @@
-# Pre entrega #2
+# HTML y CSS only
 
  Este es un proyecto hecho en el curso de Desarrollo Web de CoderHouse
 
